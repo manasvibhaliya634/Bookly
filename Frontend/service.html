@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Services - Bookly</title>
+    <style>
+        /* Define color scheme */
+        :root {
+            --primary-color: #28a745; /* Green for Bookly */
+            --secondary-color: #333333; /* Dark gray */
+            --background-color: #f7f7f7; /* Light gray background */
+            --text-color: #333333; /* General text color */
+            --service-bg: #ffffff; /* White for service cards */
+            --service-shadow: rgba(0, 0, 0, 0.1); /* Light shadow */
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: var(--background-color);
+            color: var(--text-color);
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        header {
+            text-align: center;
+            padding: 50px 0;
+        }
+
+        header h1 {
+            color: var(--primary-color);
+            font-size: 3em;
+            margin: 0;
+        }
+
+        .services-section {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-top: 40px;
+        }
+
+        .service-card {
+            background-color: var(--service-bg);
+            padding: 20px;
+            box-shadow: 0 5px 15px var(--service-shadow);
+            border-radius: 8px;
+            text-align: center;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .service-card:hover {
+            transform: translateY(-10px);
+        }
+
+        .service-icon {
+            font-size: 3em;
+            color: var(--primary-color);
+            margin-bottom: 15px;
+        }
+
+        .service-title {
+            font-size: 1.5em;
+            margin-bottom: 15px;
+            color: var(--secondary-color);
+        }
+
+        .service-description {
+            font-size: 1em;
+            line-height: 1.6;
+            color: var(--text-color);
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            padding: 20px;
+            background-color: var(--primary-color);
+            color: #ffffff;
+        }
+
+        footer p {
+            margin: 0;
+            font-size: 1em;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>Our Services</h1>
+        </header>
+
+        <section class="services-section">
+            <!-- Service 1: Book Purchase -->
+            <div class="service-card">
+                <div class="service-icon">📚</div>
+                <h2 class="service-title">Book Purchase</h2>
+                <p class="service-description">
+                    Browse our wide collection of books and purchase your favorite ones. Enjoy easy checkout and fast delivery.
+                </p>
+            </div>
+
+            <!-- Service 2: Book Recommendations -->
+            <div class="service-card">
+                <div class="service-icon">🔍</div>
+                <h2 class="service-title">Book Recommendations</h2>
+                <p class="service-description">
+                    Get personalized book recommendations based on your preferences. We help you discover your next great read.
+                </p>
+            </div>
+
+            <!-- Service 3: Book Reviews -->
+            <div class="service-card">
+                <div class="service-icon">⭐</div>
+                <h2 class="service-title">Book Reviews</h2>
+                <p class="service-description">
+                    Read and write reviews for your favorite books. Share your thoughts with our community of readers.
+                </p>
+            </div>
+
+            <!-- Service 4: Wishlist & Cart -->
+            <div class="service-card">
+                <div class="service-icon">🛒</div>
+                
+                <h2 class="service-title">Wishlist & Cart</h2>
+                <p class="service-description">
+                    Save books to your wishlist or cart for later. Purchase when you're ready and never miss out on a book you love.
+                </p>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Bookly - All Rights Reserved</p>
+    </footer>
+
+</body>
+</html>
